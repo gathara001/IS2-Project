@@ -1,8 +1,11 @@
-from flask_classification import app
+from flask_classification import create_app
+
+def main():
+    if __name__ == '__main__':
+        app = create_app()
+        app.run(debug=True)
+        return app
 
 
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
+main()
 

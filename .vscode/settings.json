@@ -1,6 +1,8 @@
 {
     "cSpell.words": [
         "mysqldb",
-        "sqlalchemy"
+        "sqlalchemy",
+        "werkzeug",
+        "wtforms"
     ]
 }
