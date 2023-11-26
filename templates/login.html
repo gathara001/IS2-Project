@@ -5,7 +5,10 @@
 {% block title %}Home | My Flask App{% endblock %}
 
 {% block content %}
-<div class="mt-20">
+<div class="mb-10 mt-16">
+    <div class="mb-10">
+        <h1 class="text-center text-3xl font-bold">Login to Account</h1>
+    </div>
     <form class="max-w-sm mx-auto" method="post" action="/login">
       <div class="mb-5">
         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
@@ -31,9 +34,19 @@
         />
       </div>
       <div class="flex items-start mb-5">
-        <p class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{{ error }}</p>
+        <p class="ms-2 text-sm font-normal text-red-500 dark:text-gray-300">{{ error }}</p>
       </div>
       <button type="submit" class="text-white bg-zinc-700 hover:bg-zinc-800 focus:ring-4 focus:outline-none focus:ring-zinc-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-zinc-600 dark:hover:bg-zinc-700 dark:focus:ring-zinc-800 w-full">Submit</button>
     </form>
 </div>
+<footer class="relative shrink-0 mb-10">
+    <div class="space-y-4 text-sm text-gray-900 sm:flex sm:items-center sm:justify-center sm:space-x-4 sm:space-y-0">
+        <p class="text-center sm:text-left">Don't have an account?</p>
+        <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-2.5 px-4 text-slate-900 ring-1 ring-slate-900/10 hover:ring-slate-900/20" href="/register">
+            <span>
+                Register <span aria-hidden="true">→</span>
+            </span>
+        </a>
+    </div>
+</footer>
 {% endblock %}

@@ -32,7 +32,7 @@ def login():
             return redirect(url_for('dashboard'))  # Redirect to a dashboard page upon successful login
 
     # If username or password is incorrect, show an error message or redirect to the login page
-    return render_template('login.html', error='Invalid username or password')
+    return render_template('login.html', error='Invalid username or password', email="matu@gmail.com", password="password")
 
 
 @app.route('/register', methods=['GET', 'POST'])
